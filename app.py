@@ -5,6 +5,7 @@ from flask_cors import CORS,cross_origin
 import pickle
 import pandas as pd
 import numpy as np
+import xgboost as xgb
 
 app = Flask(__name__) # initializing a flask app
 
