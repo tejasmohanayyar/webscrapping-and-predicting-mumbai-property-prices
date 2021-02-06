@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+<!--<input type="text" placeholder="Type" onfocus="this.placeholder=''" onblur="this.placeholder='Type'">-->
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+  </head>
+
+  <body>
+  	<!-- Heading -->
+    <h1 class="d-flex justify-content-center" style = "margin-top:12px">Mumbai Property Price Estimation</h1>
+<div class="divider py-1 bg-dark"></div>
+
+    <!--Inputs-->
+    <!-- Location -->
+
+    <div class = "form">
+
+        <form action="/predict" method="POST">
+
+            <div class = "container-fluid">
+
+                <div class = "row">
+
+                    <div class="col-lg-6" style="background-color:whitesmoke;">
+                        <br>
+                        <center>
+                            <label style = "text-align: center">Enter Location eg. Powai,Thane etc.</label>
+                            <input style = "width: 350px;text-align: center" type="text" name = "location" class="form-control" id="location"  placeholder="Enter location" onfocus="this.placeholder=''" onblur = "this.placeholder = 'Enter location'">
+                        </center>
+
+                    <!--BHK-->
+                        <center>
+                            <label style = "text-align: center">Enter the number of bedrooms</label>
+                            <input style = "width: 350px;text-align: center" type="text" name="BHK" class="form-control"  id = "BHK" placeholder="eg.3" onfocus="this.placeholder=''" onblur = "this.placeholder = 'eg.3'">
+                        </center>
+
+                    <!--Area-->
+                        <center>
+                            <label style = "text-align: center">Enter Carpet Area in sqft</label>
+                            <input style = "width: 350px;text-align: center" type ="text" name = "area" class="form-control" id = "area" placeholder="eg.1150" onfocus="this.placeholder=''" onblur = "this.placeholder = 'eg.1150'">
+                        </center>
+
+                    <!--Washrooms-->
+                        <center>
+                            <label style = "text-align: center">number of washrooms</label>
+                            <input style = "width: 350px;text-align: center" type ="text" name = "bathrooms" class="form-control" id = "bathrooms" placeholder="eg.2" onfocus="this.placeholder=''" onblur = "this.placeholder = 'eg.2'">
+                        </center>
+                    <!--Number of parking available-->
+                            <center>
+                                <label style = "text-align: center">Number of parking with property</label>
+                                <input style = "width: 350px;text-align: center" type ="text" name = "no_of_parking" class="form-control" id = "no_of_parking" placeholder="eg.1" onfocus="this.placeholder=''" onblur = "this.placeholder = 'eg.1'">
+                            </center>
+
+                        <!--Flat Floor Number-->
+                            <center>
+                                <label style = "text-align: center">Flat Floor Number</label>
+                                <input style = "width: 350px;text-align: center" type="text" class="form-control" id="flat_floor_no" name = "flat_floor_no" placeholder="eg.7" onfocus="this.placeholder=''" onblur = "this.placeholder = 'eg.7'">
+                            </center>
+
+                        <!--Total Floors-->
+                            <center>
+                                <label style = "text-align: center">Total Floors</label>
+                                <input style = "width: 350px;text-align: center" type="text" class="form-control" id="total_floors" name = "total_floors" placeholder="eg.18" onfocus="this.placeholder=''" onblur = "this.placeholder = 'eg.18'">
+                            </center>
+
+                    </div>
+
+                    <div class="col-lg-6" style="background-color:whitesmoke;">
+                        <br>
+                    <!--New or Resale-->
+                        <center>
+                            <label style = "text-align: center" for="new_or_resale">Porperty is new or resale?</label><br>
+                            <select class="custom-select" name = "new_or_resale" id = "new_or_resale" style = "width: 350px; text-align: center">
+                                <option selected value = "New">New</option>
+                                <option value="Resale">Resale</option>
+                            </select>
+                        </center>
+
+                    <!--Furnished, Semi-Furnished or Unfurnished-->
+                        <center>
+                            <label style = "text-align: center">Porperty is Furnished?</label>
+                            <br>
+                            <select class="custom-select" name = "furnishing" id = "furnishing" style = "width: 350px; text-align: center">
+                                <option selected value = "Unfurnished">Unfurnished</option>
+                                <option value="Semi-Furnished">Semi-Furnished</option>
+                                <option value="Furnished">Furnished</option>
+                            </select>
+                        </center>
+
+                    <!--Property Configuration-->
+                        <center>
+                            <label style = "text-align: center">Porperty Configuration</label>
+                            <br>
+                            <select class="custom-select" name = "config" id = "config" style = "width: 350px; text-align: center">
+                               <option selected value = "Apartment">Apartment/Flat</option>
+                               <option value="Studio">Studio</option>
+                               <option value="Other">Penthouse</option>
+                               <option value="Other">Other</option>
+                            </select>
+                        </center>
+
+                        <!--Parking Type-->
+                            <center>
+                                <label style = "text-align: center">Parking Type</label><br>
+                                <select id = "parking_type" name = "parking_type" class="custom-select" style = "width: 350px; text-align: center">
+                                    <option selected value = "Open Parking">Open Parking</option>
+                                    <option value="Covered Parking">Covered Parking</option>
+                                    <option value="Both">Both</option>
+                                </select>
+                            </center>
+
+
+
+                        <!--Possession Received?-->
+                            <center>
+                                <label style = "text-align: center">Possession Received?</label>
+                                <br>
+                                <select id = "Possession_Status_received" name = "Possession_Status_received" class="custom-select" style = "width: 350px; text-align: center">
+                                <option selected value = "Yes">Yes</option>
+                                <option value="No">No</option></select>
+                            </center>
+
+
+                        <!--Overlooking Main Road?-->
+                            <center>
+                                <label style = "text-align: center">View from property?</label>
+                                <br>
+                                <select id = "overlooking" name = "overlooking" class="custom-select" style = "width: 350px;text-align: center">
+                                    <option selected value = "Main Road">Main Road</option>
+                                    <option value="Other">Other</option>
+                                </select>
+                            </center>
+                            <br>
+                        <!--Submit Button -->
+                            <center>
+                                    <button type="submit" class="btn btn-primary mb-4">Get Estimate</button>
+                            </center>
+
+                            </div>
+                            </div>
+
+
+        </form>
+    </div>
+</body>
+</html>
+
