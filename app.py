@@ -5,6 +5,7 @@ from flask_cors import CORS,cross_origin
 import pickle
 import pandas as pd
 import numpy as np
+import joblib
 import xgboost as xgb
 
 app = Flask(__name__) # initializing a flask app
@@ -96,8 +97,8 @@ def index():
                 return render_template('var_issue.html')
 ###########################################################################################################
 
-            filename = 'Saved Models/xgbmodel.pickle'
-            loaded_model = pickle.load(open(filename, 'rb')) # loading the model file from the storage
+            filename = 'Saved Models/xgbmodel.model'
+            loaded_model = joblib.load(open(filename, 'rb')) # loading the model file from the storage
             # predictions using the loaded model file
             params = [bathrooms, BHK, no_of_parking, longitude, latitude,
                       np.log(area), np.log(flat_floor_no), np.log(total_floors),
