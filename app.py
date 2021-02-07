@@ -97,7 +97,7 @@ def index():
                 return render_template('var_issue.html')
 ###########################################################################################################
 
-            filename = 'Saved Models/adbmodel.model'
+            filename = 'Saved Models/xgbmodel.model'
             loaded_model = joblib.load(open(filename, 'rb')) # loading the model file from the storage
             # predictions using the loaded model file
             params = [bathrooms, BHK, no_of_parking, longitude, latitude,
