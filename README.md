@@ -1,27 +1,5 @@
 # Real Estate price prediction
 
-* [Data Collection](https://github.com/tejasmohanayyar/real-estate-price-prediction-from-scrapped-data-using-selinium-and-beautifulsoup/blob/master/scrapped%20magicbricks/scrapping%20magicbricks.ipynb)
- 
-  - Libraries: Selenium,BeautifulSoup
-
-* [Feature Imputation](https://github.com/tejasmohanayyar/real-estate-price-prediction-end-to-end-project-with-deployment/blob/master/scrapped%20magicbricks/Feature%20imputations.ipynb)
-
-  - Libraries: Pandas,Numpy,seaborn,matplotlib
-
-* [Feature Engineering and Visualization](https://github.com/tejasmohanayyar/real-estate-price-prediction-end-to-end-project-with-deployment/blob/master/scrapped%20magicbricks/Visualization%20and%20feature%20engineering.ipynb)
-
-  - Libraries: Matplotlib,seaborn,Folium,Plotly,pillow,VIF,nummpy,pandas,sklearn
-
-* [ML Model Creation](https://github.com/tejasmohanayyar/real-estate-price-prediction-from-scrapped-data-using-selinium-and-beautifulsoup/blob/master/scrapped%20magicbricks/Modeling.ipynb)
-
-  - Libraries: sklearn,pickle,numpy, pandas,
-
-* [Front-End-html](https://github.com/tejasmohanayyar/real-estate-price-prediction-from-scrapped-data-using-selinium-and-beautifulsoup/tree/master/templates)
-
-* [Front-End-css](https://github.com/tejasmohanayyar/real-estate-price-prediction-from-scrapped-data-using-selinium-and-beautifulsoup/tree/master/static/css)
-
-* [FLask web app](https://github.com/tejasmohanayyar/real-estate-price-prediction-from-scrapped-data-using-selinium-and-beautifulsoup/blob/master/app.py)
-
-* [Web app deployed to heroku](https://real-estate-mumbai.herokuapp.com/)
-
-
+* Please check out the article published on my wesite by <a href = "https://tejasmohanayyar.github.io/real-estate-price-estimation">clicking here</a> to know more about this project. 
+* To see the jupyter notebook for webscrapping <a href = "https://github.com/tejasmohanayyar/webscrapping-and-predicting-mumbai-property-prices/blob/master/Jupyter%20Notebooks/scrapping%20site.ipynb">click here</a>. 
+* To see EDA, feature engineering, feature selection and model building files <a href = "https://github.com/tejasmohanayyar/webscrapping-and-predicting-mumbai-property-prices/blob/master/Jupyter%20Notebooks/Feature%20Engineering%20_EDA%20_%20%20Feature%20Selection_Model%20Building%20.ipynb">click here</a>.
