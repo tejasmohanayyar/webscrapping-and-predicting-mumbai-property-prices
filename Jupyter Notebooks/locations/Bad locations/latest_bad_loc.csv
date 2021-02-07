@@ -1,4 +1,8 @@
 Possession_Status,new_or_resale,furnishing,bathrooms,price,location,date_of_posting,facing,overlooking,area,BHK,config,flat_floor_no.,total_floors,no_of_parking,parking_type,longitude,latitude
+received,Resale,Furnished,2.0,7.0,Nepeansea Road,"Dec 14, '20",South,main road,750.0,2,apartment,14,20,0,Open,,
+received,Resale,Unfurnished,1.0,2.5,Cursow Baug,"Feb 05, '21",East,main road,540.0,1,apartment,4,8,0,Open,,
+received,Resale,Semi-Furnished,1.0,4.35,World Trade Centre,"Feb 03, '21",East,other,550.0,1,apartment,9,16,1,Open,,
+received,Resale,Unfurnished,1.0,5.5,World Trade Centre,"Dec 05, '20",North,main road,406.0,1,apartment,10,15,3,Open,,
 received,Resale,Semi-Furnished,2.0,0.7,Sector 7-Mira Road,"Feb 05, '21",East,main road,560.0,2,apartment,2,4,0,Open,,
 not received,New Property,Semi-Furnished,3.0,1.14,Vinay Nagar,"Feb 04, '21",East,other,980.0,3,apartment,20,23,0,Open,,
 received,Resale,Furnished,3.0,8.5,JVPD Scheme,"Feb 05, '21",East,main road,1700.0,4,apartment,2,6,1,both,,
